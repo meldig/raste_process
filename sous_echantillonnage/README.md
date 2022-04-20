@@ -1,13 +1,13 @@
 # Objectif
 Convertir les orthophotographies métropolitaines pour qu'elles soient conformes aux arrêtés définissant les Zones Interdites à la Prise de Vue Aérienne (ZIPVA).
-### Outils
-GDAL
-### Données
-Des orthophotographies sous forme de tuiles ou assemblées
 
 # Présentation générale
 Deux arrêtés gouvernementaux de 2018 et 2021 restreignent les prises de vues en fonction d'emprises définies comme étant sensibles.
 Le territoire métropolitain (95 communes) en compte 5 en 2021.
+### Outils
+GDAL
+### Données
+Des orthophotographies sous forme de tuiles ou assemblées
 
 # Méthodologie
 #### Choix methodologiques
