@@ -2,7 +2,7 @@
 Convertir les orthophotographies métropolitaines pour qu'elles soient conformes aux arrêtés définissant les Zones Interdites à la Prise de Vue Aérienne (ZIPVA).
 ## Outils
 GDAL
-## Donnée
+## Données
 orthophotographies sous forme de tuiles ou assemblées
 
 ### Présentation générale
@@ -11,14 +11,14 @@ Le territoire métropolitain (95 communes) en compte 5 en 2021.
 
 ### Méthodologie
 #### Choix methodologiques
-La méthode retenue pour appliquer ces arrêtés tout en permettant une consultation sans impact à petite échelle consiste à dégrader la résolution des orthophotographies sur les zones définies par le gouvernement. Les ZIPVA sont donc sous-échantillonnées à 5m/pix.
+La méthode retenue pour appliquer ces arrêtés, tout en permettant une consultation sans impact à petite échelle, consiste à dégrader la résolution des orthophotographies sur les zones définies par le gouvernement. Les ZIPVA sont donc sous-échantillonnées à 5m/pix.
 
 #### Les vecteurs
 Les données brutes sont accessibles sur le site data.gouv.fr (https://www.data.gouv.fr/fr/datasets/zones-interdites-a-la-prise-de-vue-aerienne-1/). Elles ont été téléchargées et enregistrées dans la base \\batzella.lmcu.fr\vuesaeriennes\orthos\documentation\soustraction_zipva\zipva_multi_millesimes.gpkg.
 Celle-ci se compose de trois tables,
-	- arrete_12_10_2018 : les emprises définies par l'arrêté de 2018,
-	- arrete_10_06_2021 : les emprises définies par l'arrêté de 2021 et,
-	- emprises_mel : les 5 emprises métropolitaines issues de l'arrêté de 2021 (polygones et attributs sont conservés).
+-	arrete_12_10_2018 : les emprises définies par l'arrêté de 2018,
+-	arrete_10_06_2021 : les emprises définies par l'arrêté de 2021 et,
+-	emprises_mel : les 5 emprises métropolitaines issues de l'arrêté de 2021 (polygones et attributs sont conservés).
 Les différentes table contiennent une colonne DATE_EFFET. Les dates qui y figurent indiquent la date à partir de laquelle une emprises devient une ZIPVA. Pour des raisons de facilité de traitements et puisque certains aménagements sont déjà visibles antérieurement aux dates d'effets, il a été choisi de ne pas considérer ces valeurs et de les appliquer pour les ortho 2016 et postérieures.
 
 #### Chaine opératoire
