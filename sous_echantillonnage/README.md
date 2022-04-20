@@ -13,7 +13,7 @@ Le territoire métropolitain (95 communes) en compte 5 en 2021.
 #### Choix methodologiques
 La méthode retenue pour appliquer ces arrêtés, tout en permettant une consultation sans impact à petite échelle, consiste à dégrader la résolution des orthophotographies sur les zones définies par le gouvernement. Les ZIPVA sont donc sous-échantillonnées à 5m/pix.
 
-#### Les vecteurs
+#### Vecteurs
 Les données brutes sont accessibles sur le site data.gouv.fr (https://www.data.gouv.fr/fr/datasets/zones-interdites-a-la-prise-de-vue-aerienne-1/). Elles ont été téléchargées et enregistrées dans la base \\batzella.lmcu.fr\vuesaeriennes\orthos\documentation\soustraction_zipva\zipva_multi_millesimes.gpkg.
 Celle-ci se compose de trois tables,
 -	arrete_12_10_2018 : les emprises définies par l'arrêté de 2018,
@@ -27,6 +27,7 @@ L’outils se présente sous la forme d’un fichier bat à exécuter en ligne d
 -	d’un répertoire temp qui sera généré automatiquement et,
 -	des production au format tif avec un profil cog.
 Si votre orthophotographie n’est pas sous le forme de tuiles, vous pouvez désactiver les stages 1 et 2 (REM en début de ligne) et remplacer path\prod\base.vrt par votre tif.
+
 Pour être exécutable, il convient de modifier le fichier gdal_zipva.bat comme il suit :
 -	Replacer toutes les occurrences de path par le nom du répertoire de travail.
 -	Définir le système de projection des données entrantes (l. 9).
