@@ -24,4 +24,4 @@ gdal_translate -of COG -co COMPRESS=JPEG -co BIGTIFF=IF_SAFER -co NUM_THREADS=AL
 
 REM ----------STAGE 6 : SUPPR TEMP----------
 REM suppression des fichiers temp
-rmdir path\prod
+rmdir /s /q path\prod
