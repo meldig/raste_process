@@ -1,20 +1,20 @@
 # Objectif
 Convertir les orthophotographies métropolitaines pour qu'elles soient conformes aux arrêtés définissant les Zones Interdites à la Prise de Vue Aérienne (ZIPVA).
-## Outils
+### Outils
 GDAL
-## Données
-orthophotographies sous forme de tuiles ou assemblées
+### Données
+Des orthophotographies sous forme de tuiles ou assemblées
 
-### Présentation générale
+# Présentation générale
 Deux arrêtés gouvernementaux de 2018 et 2021 restreignent les prises de vues en fonction d'emprises définies comme étant sensibles.
 Le territoire métropolitain (95 communes) en compte 5 en 2021.
 
-### Méthodologie
+# Méthodologie
 #### Choix methodologiques
 La méthode retenue pour appliquer ces arrêtés, tout en permettant une consultation sans impact à petite échelle, consiste à dégrader la résolution des orthophotographies sur les zones définies par le gouvernement. Les ZIPVA sont donc sous-échantillonnées à 5m/pix.
 
 #### Vecteurs
-Les données brutes sont accessibles sur le site data.gouv.fr (https://www.data.gouv.fr/fr/datasets/zones-interdites-a-la-prise-de-vue-aerienne-1/). Elles ont été téléchargées et enregistrées dans la base \\batzella.lmcu.fr\vuesaeriennes\orthos\documentation\soustraction_zipva\zipva_multi_millesimes.gpkg.
+Les données brutes sont accessibles sur le site data.gouv.fr (https://www.data.gouv.fr/fr/datasets/zones-interdites-a-la-prise-de-vue-aerienne-1/). Elles ont été téléchargées et enregistrées dans la base \\\batzella.lmcu.fr\vuesaeriennes\orthos\documentation\soustraction_zipva\zipva_multi_millesimes.gpkg.
 Celle-ci se compose de trois tables,
 -	arrete_12_10_2018 : les emprises définies par l'arrêté de 2018,
 -	arrete_10_06_2021 : les emprises définies par l'arrêté de 2021 et,
